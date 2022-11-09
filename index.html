@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geoportal</title>
+	<meta charset="utf-8">
+	<meta name="Keyword" content="Geospatial Developpers,web mappin ,Web GIS">
+	<meta name="Description" content="Geoportal Developpement">
+
+	<!--bootstrap css-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+     <!--leaflet css-->
+
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+
+	<link rel="stylesheet" type="text/css" href="css/map.css">
+
+</head>
+<body>
+
+	<div class="container-fluid" style="padding:0px ;">
+	<nav class="navbar navbar-expand-lg nav-light bg-dark">
+  <div class="container-fluid">
+<a class="navbar-brand" href="#"><img src="img/geospatial.png" style="height:50px;"></a>
+    <a id="geos" class="navbar-brand" href="#" >Geospatial Developpers</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       <li class="nav-item">
+          <a id="geos" class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a id="geos" class="nav-link" href="#">About</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled"></a>
+        </li>-->
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</div>
+
+<!--container for the map-->
+	<div id="map">
+		<!--container for displaying the coordinate on map-->
+		<div id="coordinate"></div>
+	</div>
+
+
+ <!--leaflet css-->
+ <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+
+     <!--jquery-->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+  <!--adding leaflet browserprint-->
+  <script type="text/javascript" src="js/leaflet.browser.print.js"></script>
+<!--adding turf script source -->
+
+  <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+  
+  <!--adding  json converted layers-->
+ <script type="text/javascript" src="data/16_Regions.js"></script>
+<script type="text/javascript" src="data/RailwayLines.js"></script>
+<script type="text/javascript" src="data/healthfacilities.js"></script>
+
+
+     <!--bootstrap js-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/map.js"></script>
+
+ 
+
+
+</body>
+</html>
